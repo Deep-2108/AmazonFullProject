@@ -71,6 +71,5 @@ document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
                 quantity:1
             });
           }
-          console.log(cart);
         });
 });
