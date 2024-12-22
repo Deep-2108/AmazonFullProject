@@ -1,6 +1,12 @@
 import {cart,removeFromCart} from  '../data/cart.js';
 import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
+
+
+const today=dayjs();
+const deliveryDate=today.add(7,'days');
+deliveryDate.format('dddd, MMMM D');
+
 let cartSummaryHTML='';
 cart.forEach((cartItem)=>{
     const productId=cartItem.productId;
