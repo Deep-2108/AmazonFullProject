@@ -9,6 +9,17 @@ export function getProduct(productId){
   return matchingProduct;
 }
 
+// export let products=[];
+// export function loadProducts(fun){
+//   const xhr=new XMLHttpRequest();
+
+//   xhr.addEventListener('load',()=>{
+//     products=JSON.parse(xhr.response);
+//   });
+//   xhr.open('GET','https://supersimplebackend.dev/products');
+//   xhr.send();
+//   fun();
+// }
 
 export const products = [
   {
